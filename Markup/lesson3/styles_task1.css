@@ -1,0 +1,56 @@
+h1{
+    text-align: right;
+    color: orange;
+    font-weight: bold;
+}
+p:first-letter{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+em{
+    background-color: green;
+    color: white;
+}
+
+/* Сначала ищем h2, потом div "у которого id="allotment" */
+div#allotment h2{
+    font-weight: bold;
+    color: orange;
+}
+
+div#warehouse h2{
+    font-weight: bold;
+    color: blue;
+}
+div.plants-list li{
+    font-weight: bold;
+}
+div#allotment .fruits-list {
+    color: grey;
+}
+div#warehouse .fruits-list {
+    color: green;
+}
+.vegetables-list{
+    color: red;
+}
+
+thead{
+    font-weight: bold;
+    text-align: center;
+}
+
+.students{
+    color: orange;
+    text-align: left;
+    font-weight: normal;
+    background-color: white;
+    
+}
+tbody{
+    color: white;
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+}

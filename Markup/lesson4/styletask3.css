@@ -1,0 +1,32 @@
+
+div{
+    background-color: #FAFAF8;
+    text-align: center;
+}
+ul{  
+    font: 15px Economica, sans-serif;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+li{
+    color: #A23CD0;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    padding: 5px 8px;
+    display: inline-block;
+}
+li:hover{
+    cursor: pointer;
+    background-color: #A23CD0;
+    color: white;
+}
+span{
+    font: 18px Economica, sans-serif;
+    display: inline-block;
+    margin: 0 15px;
+}
+a{
+    text-decoration: none;
+    color: #A23CD0;
+}
