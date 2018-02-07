@@ -357,6 +357,10 @@ body {
 }
 
 /* contact us */
+.contact_us{
+	padding: 50px 0;
+}
+/* }
 input, textarea, .btn_push{
 	display: block;
 	margin: 20px 0;
@@ -367,7 +371,6 @@ textarea{
 	border-radius: 2px;
 }
 textarea{
-	resize: none;
 	border: 1px solid #CCCCCC;
 	border-radius: 2px;
 }
@@ -376,22 +379,23 @@ textarea{
 	border: 1px solid #CCCCCC;
 	border-radius: 2px;
 }
+
 .pop_form h1{
 	color: #464646;
 	font-family: "Drina";
-	font-size: 45px;
+	font-size: 37px;
 	margin: 5px 0;
 	text-align: left;
 }
 .btn_push{
 	border: none;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: "Drina";
 	border-radius: 5px;
 	font-style: italic;
-	padding: 15px 35px;
+	padding: 13px 25px;
 	background: linear-gradient(to bottom, #E98683, #F0D98A);
 	background: -moz-linear-gradient(to bottom, #E98683, #F0D98A);
 	background: -o-linear-gradient(to bottom, #E98683, #F0D98A);
 	background: -webkit-linear-gradient(to bottom, #E98683, #F0D98A);
-}
+} */
