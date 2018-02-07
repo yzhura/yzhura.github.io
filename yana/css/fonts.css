@@ -39,13 +39,16 @@
 	font-weight: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:100,100i,200,200i,300,300i,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=|Montserrat:100,100i,200,200i,300,300i,400,500,600,700,800');
 
 @font-face {
     font-family: "Drina"; /* Гарнитура шрифта */
-    src: url("../fonts/Drina/drina.otf"); /* Путь к файлу со шрифтом */
-   }
-   
+	src: url("../fonts/Drina/drina.otf"); /* Путь к файлу со шрифтом */
+	font-style: italic;
+	font-weight: normal;
+}
+
+/*    
 @font-face {
 	font-family: "AeroMaticsBold";
 	src: url("../fonts/AeroMaticsBold/AeroMaticsBold.eot");
@@ -74,8 +77,8 @@
 	url("../fonts/AeroMaticsItalic/AeroMaticsItalic.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: "ACLineRegular";
 	src: url("../fonts/ACLineRegular/ACLineRegular.eot");
 	src: url("../fonts/ACLineRegular/ACLineRegular.eot?#iefix")format("embedded-opentype"),
@@ -83,9 +86,9 @@
 	url("../fonts/ACLineRegular/ACLineRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
 	font-family: "ComfortaaRegular";
 	src: url("../fonts/ComfortaaRegular/ComfortaaRegular.eot");
 	src: url("../fonts/ComfortaaRegular/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
@@ -113,3 +116,4 @@
 	url("../fonts/ComfortaaBold/ComfortaaBold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
+} */

@@ -39,7 +39,7 @@ body {
 	background: -webkit-linear-gradient(to bottom, #E98683, #F0D98A); */
 }
 .logo a{
-	font-family: "Drina";
+	font-family: 'Drina';
 	color: white;
 	font-size: 35px;
 	float: left;
@@ -60,7 +60,7 @@ body {
 	padding: 10px 0;
 	margin: 0 10px;
 	font-size: 13px;
-	/* font-family: "ComfortaaBold"; */
+	
 	text-transform: uppercase;
 }
 .main_menu ul li a:hover{
@@ -81,12 +81,11 @@ body {
 }
 .mid_line h2{
 	margin: 20px 0;
-	font-family: "Drina";
+	font-family: 'Drina';
 	font-size: 60px;
 }
 .mid_line h1{
 	text-transform: uppercase;
-	/* font-family: "ComfortaaBold"; */
 	font-size: 90px;
 	font-weight: 700;
 	margin: 20px 0;
