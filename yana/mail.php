@@ -1,11 +1,11 @@
 <?php
 
-$recepient = "youmail@ya.ru";
-$sitename = "Название сайта";
+$recepient = "zhuravlev.yaroslav@gmail.com";
+$sitename = "Litvian Yana";
 
 $name = trim($_GET["name"]);
 $phone = trim($_GET["phone"]);
-$text = trim($_GET["text"]);
+$text = trim($_GET["comment"]);
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
 $message = "Имя: $name \nТелефон: $phone \nТекст: $text";
