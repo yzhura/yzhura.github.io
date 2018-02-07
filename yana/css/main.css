@@ -113,7 +113,8 @@ body {
 .show h2,
 .about_me h2,
 .works h2,
-.testimomials h2{
+.testimomials h2,
+.contact_us h2{
 	color: #333333;
 	font-family: "Drina";
 	font-size: 33px;
@@ -359,6 +360,71 @@ body {
 /* contact us */
 .contact_us{
 	padding: 50px 0;
+	border-bottom: 1px solid #E5E5E5;
+}	
+.contact_us h2{
+	text-align: left;
+}
+.contact_us h2:hover{
+	cursor: default;
+}
+.contacts{
+	display: inline-block;
+	border-bottom: 1px solid #E5E5E5;
+	color: #95E1D3;
+	margin-left: 10%;
+	position: relative;
+}
+.contacts a,
+.contacts address{
+	display: inline-block;
+	color: #95E1D3;
+	font-style: italic;
+	margin: 5px 0;
+	font-family: "RobotoLight";
+}
+.contacts a:hover,
+.contacts address:hover{
+	color: rgb(86, 219, 195);
+}
+.social_net{
+	border-bottom: 1px solid #E5E5E5;
+	display: inline-block;
+	margin-left: 10%;
+}
+.social_net a{
+	font-size: 30px;
+	padding:  10px;
+	color: #95E1D3;
+}
+.social_net a:hover{
+	color: rgb(86, 219, 195);
+}
+.iphone{
+	margin: 0 auto;
+	width: 60%;
+	height: 400px;
+	background-image: url(../images/iphone.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.iphone a {
+	 
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.footer{
+	text-align: center;
+}
+.footer p{
+	color: #333333;
+	font-weight: bold;
+	font-size: 13px;
+}
+.footer a{
+	/* color: rgb(80, 221, 195); */
 }
 /* }
 input, textarea, .btn_push{

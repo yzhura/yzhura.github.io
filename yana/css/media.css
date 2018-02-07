@@ -75,7 +75,11 @@
         padding-top: 0;
         margin-left: 20%;
     }
-    
+
+    .contacts,.social_net,.iphone{
+        margin-left: 35%;
+    }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -129,6 +133,9 @@
     }
     .me{
         height: 200px;
+    }
+    .social_net,.iphone,.contacts{
+        margin-left: 13%; 
     }
 }
 
