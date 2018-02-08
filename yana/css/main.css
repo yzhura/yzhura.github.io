@@ -160,8 +160,6 @@ p::-moz-selection, h1::-moz-selection,h2::-moz-selection,h3::-moz-selection,h4::
 	background-color: #95E1D3;
 	text-align: center;
 	color: white;
-	
-	
 }
 .stats h1{
 	font-weight: bold;
