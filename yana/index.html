@@ -22,35 +22,52 @@
 	<link rel="stylesheet" href="css/media.css" />
 	<style>
 		#page-preloader {
+			display: inline-block;
 			position: fixed;
 			left: 0;
 			top: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(179, 179, 179);
+			background: rgb(255, 255, 255);
 			z-index: 100500;
 		}
 		#page-preloader .spinner {
-			width: 32px;
-			height: 32px;
+			width: 125px;
+			height: 125px;
 			position: absolute;
-			left: 50%;
-			top: 50%;
-			background: url('icons/spinner.gif') no-repeat 50% 50%;
-			margin: -16px 0 0 -16px;
+			left: 40%;
+			top: 45%;
+			background: url(icons/spinner.gif) no-repeat 50% 50%;
+			margin: 0 auto;
+		
+		}
+		.sec{
+			position: absolute;
+			left: 39%;
+			top: 27%;
+			display: inline-block;
+			color: #333333;
+			font-family: "Lemon Tuesday";
+			font-size: 33px;
+			text-align: center;
+			z-index: 1005005;
 		}
 	</style>
 </head>
 <body>
-	<div id="page_preload">
+	<section>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<span class="spinner"></span>
+					<div id="page-preloader">
+						<h2 class="sec">Секондочку...</h2>
+						<span class="spinner"></span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	
 	<header class="top_header">
 		<div class="top_line">
 			<div class="container">
