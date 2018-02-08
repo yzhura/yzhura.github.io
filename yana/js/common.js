@@ -19,7 +19,8 @@ $(document).ready(function() {
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	$(".main_menu").navigation();
+	$(".btn_more").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
@@ -43,7 +44,7 @@ $(document).ready(function() {
 	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
 	owl.owlCarousel({
-		items : 2,
+		items : 4,
 		autoplay : true
 	});
 	owl.on(".owl-wrapper", function (e) {

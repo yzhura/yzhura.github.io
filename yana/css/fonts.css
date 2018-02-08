@@ -47,7 +47,12 @@
 	font-style: italic;
 	font-weight: normal;
 }
-
+@font-face {
+    font-family: "Lemon Tuesday"; /* Гарнитура шрифта */
+	src: url("../fonts/LemonTuesday/lemon.otf"); /* Путь к файлу со шрифтом */
+	font-style: italic;
+	font-weight: normal;
+}
 /*    
 @font-face {
 	font-family: "AeroMaticsBold";
