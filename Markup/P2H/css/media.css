@@ -1,0 +1,105 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .firstBlock>h1{
+        font-size: 50px;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .wrapper{
+        width: 768px;
+    }
+    .firstBlock>h1{
+        font-size: 32px;
+        width: auto;
+    }
+    .firstBlock2>h1{
+        font-size: 32px;
+        width: auto;
+    }
+    .firstBlock>p{
+        width: auto;
+    }
+    .firstBlock,
+    .secondBlock{
+        text-align: center;
+        clear: both;
+        width: 90%;
+    }
+    table{
+        margin: 0 auto;
+    }
+    table td{
+        width: 200px;
+    }
+    .about_skills{
+        width: 200px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .wrapper{
+        width: 480px;
+    }
+    #video{
+        width: 300px;
+        height: 200px;
+    }
+    #play{
+        top: 30%;
+        left: 40%;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+   .wrapper{
+       width: 320px;
+   }
+   #video{
+       width: 300px;
+       height: 200px;
+   }
+   #play{
+       top: 30%;
+       left: 40%;
+   }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
