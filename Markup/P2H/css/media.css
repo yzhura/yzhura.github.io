@@ -2,31 +2,47 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    
+    .wrapper{
+        max-width: 1200px;
+        width: auto;
+        margin: 0;
+    }
+    #video{
+        margin: 48px auto;
+        position: relative;
+        width: 375px;
+        height: 290px;
+        background-color: #C4C0B1;
+        box-shadow: 0px 0px 40px rgb(165, 165, 165);
+    }
+    .firstBlock>h1{
+        font-size: 40px;
+    }
+    table td{
+        width: 180px;
+        height: 185px;
+        max-height: 255px;
+        padding: 5px;
+    }
+    .about_skills{
+        width: 180px;
+        height: 275px;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .avatar{
+        width: 270px;
+        height: 410px;
+        background-color: #F5F0DD;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .firstBlock>h1{
-        font-size: 50px;
-    }
-    
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .wrapper{
-        width: 768px;
-    }
-    .firstBlock>h1{
-        font-size: 32px;
-        width: auto;
-    }
-    .firstBlock2>h1{
-        font-size: 32px;
-        width: auto;
-    }
+    .firstBlock>h1,
     .firstBlock>p{
+        text-align: center;
         width: auto;
     }
     .firstBlock,
@@ -44,16 +60,9 @@
     .about_skills{
         width: 200px;
     }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .wrapper{
-        width: 480px;
-    }
     #video{
-        width: 300px;
-        height: 200px;
+        width: 290px;
+        height: 205px;
     }
     #play{
         top: 30%;
@@ -61,19 +70,81 @@
     }
 }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .description_p2,.description_p3{
+        width: 100%;
+    }
+    .avatars{
+        width: 115px;
+        height: 127px;    
+    }
+    #person_photo{
+        width: 100%;
+    }
+   .avatar{
+       margin: auto;
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    nav>ul>li{
+        margin: 13px 0 0 0;   
+    }
+    nav>ul>li>a{
+        text-align: center;
+        padding: 5px;
+    }
+    .firstBlock>h1{
+        font-size: 18px;
+        width: auto;
+    }
+    .firstBlock>p{
+        font-size: 14px;
+        width: auto;
+    }
+    .firstBlock2>h1{
+        font-size: 18px;
+        width: auto;
+    }
+    #video{
+        width: 250px;
+        height: 175px;
+    }
+    #play{
+        top: 30%;
+        left: 40%;
+    }
+    table td{
+        width: 115px;
+        height: 225px;
+        padding: 5px;
+    }
+    .about_skills{
+        width: 115px;
+        height: 400px;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .skill_name{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 7px 5px;
+    }
+    .secondBlock{
+        padding: 15px;
+    }
+    .firstBlock{
+        padding: 10px;
+    }
+      
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-   .wrapper{
-       width: 320px;
-   }
-   #video{
-       width: 300px;
-       height: 200px;
-   }
-   #play{
-       top: 30%;
-       left: 40%;
-   }
+    
 }
 
 
@@ -91,7 +162,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    
+
 }
 
 /* Medium Devices, Desktops */

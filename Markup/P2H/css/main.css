@@ -6,8 +6,20 @@ body {
 }
 .wrapper{
 	margin: 0 auto;
-	width: 1250px;
-	min-width: 480px;
+	width: auto;
+	max-width: 1250px;
+	/* min-width: 480px; */
+}
+li{
+	list-style-type: none;
+}
+ul{
+	padding: 0;
+}
+.sections1{
+	padding-top: 29px;
+	background-color: #F6F2F2;
+	width: 100%;
 }
 a{
 	text-decoration: none;
@@ -18,7 +30,6 @@ nav{
 	font-size: 14px;
 	text-align: center;
 	width: 100%;
-	min-width: 499px;
 	height: 90px;
 	background-color: #313030;
 	
@@ -40,14 +51,16 @@ nav>ul>li>a:hover{
 
 .firstBlock{
 	padding: 25px;
+	width: 50%;
 	float: left;
 }
 .secondBlock{
 	padding: 25px;
+	width: 40%;
 	float: left;
 }
 .firstBlock>h1{
-	width: 587px;
+	width: 90%;
 	margin-top: 58px; 
 	margin-bottom: 15px;
 	text-transform: uppercase;
@@ -59,7 +72,7 @@ nav>ul>li>a:hover{
 }
 .firstBlock>p{
 	color: #8C8989;	
-	width: 515px;
+	width: 80%;
 }
 #video{
 	margin: 78px auto;
@@ -67,6 +80,10 @@ nav>ul>li>a:hover{
 	width: 525px;
 	height: 330px;
 	background-color: #C4C0B1;
+	box-shadow: 0px 0px 40px rgb(165, 165, 165);
+}
+#video:hover{
+	cursor: pointer;
 }
 #play{
 	position: absolute;
@@ -85,6 +102,9 @@ nav>ul>li>a:hover{
 	line-height: 55px;
 	color: white;
 	background-color: #FF2D2D;
+}
+.clear{
+	clear: both;
 }
 
 /* Skills */
@@ -136,4 +156,135 @@ table td{
 	height: 3px;
 	border-bottom: 1px solid rgba(128, 128, 128, 0.452);
 	clear: both;
+}
+
+
+/* Products */
+.sections3{
+	padding: 25px 0;
+}
+.about_products{
+	text-align: center;
+}
+.information_h1{
+	color: #585858;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+.description_p{
+	color: #878787;
+}
+.description_p1{
+	margin: auto;
+	width: 50%;
+}
+.hr_line{
+	width: 128px;
+	height: 2px;
+	background-color: #FF2D2D; 
+}
+.hr_line1{
+	margin: 30px auto;
+	top: 30px;
+}
+
+.about_products>ul>li>a{
+	color: #7D7D7D;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 30px 35px;
+}
+.about_products>ul>li>a:hover{
+	color: #FF2D2D;
+}
+.product_images{
+	margin: auto;
+	display: inline-block;
+}
+.prd_img{
+	display: inline-block;
+	margin: 5px;
+	width: 299px;
+	height: 290px;
+	background-color: #F5F0DD;
+}
+.prd_img:hover{
+	cursor: pointer;
+}
+
+
+/* Our team */
+.information_h1_1{
+	font-size: 30px;
+}
+.about_team{
+	padding: 25px;
+}
+.description_p2{
+	width: 40%;	
+}
+.hr_line2{
+	margin: 30px 0;
+}
+.more_about_team{
+	padding: 10px 0 0 25px;
+	display: inline-block;
+}
+#person_photo{
+	display: inline-block;
+	width: 25%;
+	padding: 25px 0;
+}
+.avatar{
+	width: 320px;
+	height: 460px;
+	background-color: #F5F0DD;
+}
+.about_person{
+	width: 65%;
+	vertical-align: top;
+	box-sizing: border-box;
+	margin: 0 0 0 75px;
+	display: inline-block;
+}
+.description_p3{
+	width: 75%;
+	margin-bottom: 45px;
+}
+.soc_networks_team>li>a{
+	color: #919191;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0 15px;
+	position: relative;
+	left: -15px; 
+}
+.more_team_avatars{
+	display: inline-block;
+	margin-top: 70px; 
+}
+.avatars{
+	display: inline-block;
+	width: 195px;
+	position: relative;
+	height: 214px;
+	background-color: #F5F0DD;
+}
+.names_of_team{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	line-height: 30px;
+}
+.names{
+	color: white;
+	text-transform: uppercase;
+}
+.avatars:hover .names_of_team{
+	display: block;
 }
