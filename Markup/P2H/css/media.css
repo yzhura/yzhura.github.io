@@ -10,10 +10,13 @@
     #video{
         margin: 48px auto;
         position: relative;
-        width: 375px;
+        width: 345px;
         height: 290px;
         background-color: #C4C0B1;
         box-shadow: 0px 0px 40px rgb(165, 165, 165);
+    }
+    .firstBlock{
+        width: 45%;
     }
     .firstBlock>h1{
         font-size: 40px;
@@ -36,12 +39,27 @@
         height: 410px;
         background-color: #F5F0DD;
     }
+    [type*="text"]{
+        margin: 50px 50px 50px 0px;
+        width: 150px;
+        font-size: 17px;
+        height: 70px;
+    }
+    textarea,
+    .submit_btn2{
+        width: 457px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .firstBlock>h1,
+    .firstBlock>h1{
+        font-size: 42px;
+        text-align: center;
+        width: auto;
+    }
     .firstBlock>p{
+        font-size: 38px;
         text-align: center;
         width: auto;
     }
@@ -68,6 +86,25 @@
         top: 30%;
         left: 40%;
     }
+    [type*="email"]{
+        font-size: 18px;
+        width: 420px;
+        height: 60px;
+    }
+    .submit_btn{
+        font-size: 18px;
+        width: 180px;
+        height: 62px;
+    }
+    .info_form_block{
+        position: static;
+        height: 253px;
+        width: 75%;
+        padding: 25px;
+    }
+    .contact_form{
+        text-align: center;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -85,6 +122,31 @@
    .avatar{
        margin: auto;
    }
+   [type*="email"]{
+    width: 300px;
+    }
+   .submit_btn{
+       margin: 10px;
+   }
+   textarea{
+    width: 300px;
+    height: 150px;
+    }
+
+    [type*="text"]{
+        margin: 25px 25px 25px 0px;
+    }
+    .sections7{
+        padding-bottom: 50px;
+    }
+    nav>ul>li>a{
+        color: #E0E0E0;
+        display: inline-block;
+        padding: 37px 18px;
+    }
+    .firstBlock>h1{
+        font-size: 33px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -97,7 +159,8 @@
         padding: 5px;
     }
     .firstBlock>h1{
-        font-size: 18px;
+        margin: 10px 0;
+        font-size: 21px;
         width: auto;
     }
     .firstBlock>p{
@@ -139,7 +202,49 @@
     .firstBlock{
         padding: 10px;
     }
-      
+    [type*="email"]{
+        width: 200px;
+    }
+    textarea{
+        width: 175px;
+        height: 100px;
+    }
+    [type*="text"]{
+        margin: 15px 15px 15px 0px;
+        width: 240px;
+        font-size: 17px;
+        height: 50px;
+    }
+    .description_p4,
+    .description_p1{
+        width: 80%;
+    }
+    [type*="text"]{
+        width: 125px;
+    }
+    .subscribe{
+    padding: 15px;
+    }
+    .avatar{
+        width: 150px;
+        height: 230px;
+        background-color: #F5F0DD;
+    }
+    .about_person{
+       margin: 0;
+       width: 80%;
+    }
+    .prd_img{
+        width: 50px;
+        height: 50px;
+    }
+    .avatars{
+        width: 25px;
+        height: 25px;
+    }
+    .more_team_avatars{
+        margin: 15px 0 0 0;
+    }
 }
 
 /* Custom, iPhone Retina */
