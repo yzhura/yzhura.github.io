@@ -94,6 +94,7 @@
     transition: all .3s ease-out;
     position: relative;
     overflow: hidden;
+    cursor: grab;
     &:before {
         content: '';
         position: absolute;

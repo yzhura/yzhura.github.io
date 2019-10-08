@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -716,7 +717,7 @@ html {
 body {
   color: #000;
   background: #fff;
-  font: 16px/1.2 "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font: 16px/1.2 "Source Sans Pro", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -748,7 +749,7 @@ h6, .h6,
 h1, .h1 {
   font-size: 136px;
   font-weight: 400;
-  font-family: "Lemon Tuesday", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Lemon Tuesday", "Source Sans Pro", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 h2, .h2 {
@@ -917,7 +918,7 @@ input[type='submit'] {
 }
 
 .logo {
-  font-family: "Drina", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Drina", "Source Sans Pro", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 45px;
 }
 
@@ -1022,6 +1023,8 @@ input[type='submit'] {
   transition: all .3s ease-out;
   position: relative;
   overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .slick-slide:before {

@@ -5,16 +5,25 @@ jQuery(function() {
 
 // slick init
 function initSlickCarousel() {
-	jQuery('.collection-slider').slick({
+	var collectionSlider = jQuery('.collection-slider');
+	collectionSlider.slick({
 		slidesToScroll: 1,
 		rows: 0,
 		prevArrow: '<span class="slick-prev">previous</span>',
 		nextArrow: '<span class="slick-next">next</span>',
 		dots: true,
 		dotsClass: 'slick-dots',
-        vertical: true,
-        verticalSwiping: true
+		vertical: true,
+		verticalSwiping: true
 	});
+	collectionSlider.on('wheel', (function(event) {
+		event.preventDefault();
+		if (event.originalEvent.deltaY > 0) {
+			jQuery(this).slick('slickNext');
+		} else {
+			jQuery(this).slick('slickPrev');
+		}
+	}));
 }
 
 
