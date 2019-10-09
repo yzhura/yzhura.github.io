@@ -5,7 +5,7 @@ jQuery(function() {
 
 // slick init
 function initSlickCarousel() {
-	var collectionSlider = jQuery('.collection-slider');
+	let collectionSlider = jQuery('.collection-slider');
 	collectionSlider.slick({
 		slidesToScroll: 1,
 		rows: 0,
