@@ -1,3 +1,5 @@
+.gitignore
+/node_modules
 Litvina/markup/node_modules/grunt-contrib-watch/node_modules/lodash/internal/escapeHtmlChar.js
 Litvina/markup/node_modules/.bin/acorn
 Litvina/markup/node_modules/.bin/acorn.cmd
@@ -4982,3 +4984,4 @@ Litvina/markup/node_modules/grunt-contrib-watch/node_modules/lodash/internal/Lod
 Litvina/markup/node_modules/grunt-contrib-watch/node_modules/lodash/internal/MapCache.js
 Litvina/markup/node_modules/grunt-contrib-watch/node_modules/lodash/internal/SetCache.js
 /Litvina/markup/node_modules
+/reactjs/munchkin/node_modules
