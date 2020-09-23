@@ -1,0 +1,67 @@
+.table {
+    th, td {
+        background-color: #ffcc80;
+        border: 0;
+        text-align: center;
+        font-size: 21px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 220px;
+        @media screen and (max-width: 475px) {
+            max-width: 90px;
+        }
+    }
+}
+
+.contentWrap {
+    min-width: 80px;
+    white-space: nowrap;
+    @media screen and (max-width: 475px) {
+        min-width: auto;
+    }
+}
+
+.winnerPopup {
+    z-index: 5;
+    max-width: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    min-height: 450px;
+    min-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    animation: animPopup .3s ease-out forwards;
+    @keyframes animPopup {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(.7);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
+
+.winnerName {
+    font-size: 28px;
+    font-style: italic;
+}
+
+.btnList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        margin: 0 0 15px;
+    }
+    button {
+        width: 100%;
+    }
+}
