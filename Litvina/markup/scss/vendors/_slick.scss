@@ -1,0 +1,256 @@
+/* Slick slider styles */
+
+.collection-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.collection-slider .slick-track,
+.collection-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+    }
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-arrow {
+    position: absolute;
+    color: #000;
+    opacity: .4;
+    top: 45px;
+    font-size: 18px;
+    transition: color .3s ease-out;
+    z-index: 9999;
+    animation: anim-path-slick-arrows-color .75s ease-out;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 75px;
+        height: 1px;
+        background-color: #000;
+        top: 50%;
+        animation: anim-path-slick-arrows 1s ease-out forwards;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: #000;
+        left: -5px;
+        right: -5px;
+        bottom: 0;
+        height: 1px;
+        z-index: -1;
+        transition: height .3s ease-out;
+        animation: anim-path-slick-arrows-bg .75s ease-out;
+    }
+    &:hover {
+        cursor: pointer;
+        color: white;
+        &::after {
+            height: 100%;
+        }
+    }
+    @keyframes anim-path-slick-arrows {
+        from {
+            width: 0;
+        }
+        to {
+            width: 75px;
+        }
+    }
+    @keyframes anim-path-slick-arrows-bg {
+        from {
+            height: 100%;
+        }
+        to {
+            height: 1px;
+        }
+    }
+    @keyframes anim-path-slick-arrows-color {
+        from {
+            color: white;
+        }
+        to {
+            color: #000;
+        }
+    }
+}
+
+.slick-prev {
+    left: 115px;
+    &::before {
+        right: 125%;
+    }
+}
+
+.slick-next {
+    right: 125px;
+    &::before {
+        left: 125%;
+    }
+}
+
+.slick-dots {
+    @extend %listreset;
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    min-width: 50px;
+    text-align: center;
+    li {
+        transition: all .3s ease-out;
+        position: relative;
+        overflow: hidden;
+        @keyframes anim-li {
+            from {
+                height: 0;
+            }
+            to {
+                height: 130px;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 0;
+            bottom: 25px;
+            left: 50%;
+            background: #000;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 0;
+            top: 25px;
+            left: 50%;
+            background: #000;
+        }
+        &.slick-active {
+            padding: 180px 0;
+            &::after {
+                animation: anim-li .3s ease-out forwards .8s;
+            }
+            &::before {
+                animation: anim-li .3s ease-out forwards .4s;
+            }
+            &:first-child {
+                padding: 0 0 180px;
+                &::after {
+                    animation: anim-li .3s ease-out forwards .4s;
+                }
+                &::before {
+                    animation: none;
+                }
+            }
+            &:last-child {
+                padding: 180px 0;
+                &::after {
+                    animation: none;
+                }
+                &::before {
+                    animation: anim-li .3s ease-out forwards .4s;
+                }
+            }
+            button {
+                font-size: 48px;
+            }
+        }
+    }
+    button {
+        margin: 15px 0;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 14px;
+        transition: all .3s ease-out;
+        &:before {
+            content: '0';
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+

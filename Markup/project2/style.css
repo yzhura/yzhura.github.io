@@ -1,0 +1,131 @@
+.body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width:  auto;
+    max-width: 1600px;
+    min-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+#text{
+    display: block;
+}
+h1{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+span{
+    font-weight: 100;
+    color: #9C9C9C;
+    font-size: 14px;
+}
+.gallery{
+    padding: 50px 150px 50px 150px; 
+    display: inline-block;
+    position: relative;
+}
+.cover{
+    display: inline-block;
+    margin: 10px; 
+    z-index: 3;
+    position: relative;
+    width: 360px;
+    height: 260px;
+    box-sizing: border-box;
+}
+.blue{
+    width: 100%;
+    height: 100%;
+    background: #30ADFA;
+    opacity: 0.87;
+    z-index: 3;
+    display: none;
+    position: absolute;
+}
+img{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cover:hover .blue{
+    cursor: pointer;
+    display: block;
+}
+.cover:hover button{
+    cursor: pointer;
+    display: block;
+}
+button{
+    z-index: 3;
+    position: absolute;
+    top: 110px;
+    padding: 20px;
+    background: #30ADFA;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: none;
+}
+button.zoom{
+    left: 135px;
+    background-image: url(icons/zoom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.link{
+    left: 185px;
+    background-image: url(icons/link.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#zoom{
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    min-width: 900px;
+    position: absolute;
+    opacity: 0.9;
+    background-color: white;
+    visibility: hidden;
+    z-index: 5;
+}
+.window{
+    visibility: hidden;
+    left: 10%;
+    top: 10%;
+    z-index: 6;
+    position: fixed;
+    width: 80%;
+    min-width: 350px;
+    height: 670px;
+    min-height: 250px; 
+    border: 3px solid #999999;
+    border-radius: 3px;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 7;
+    top: -20px;
+    left: 95%;
+    background-color: #FA4B14;
+    background-image: url(icons/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.close:hover{
+    cursor: pointer;
+}
+#f_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
