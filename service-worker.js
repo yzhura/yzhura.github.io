@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD:service-worker.js
   "./precache-manifest.1c091963281cf65295d36e687bf26dbc.js"
+=======
+  "/reactjs/munchkin/precache-manifest.af7409f2ba2d669defd9b0d20b1483dc.js"
+>>>>>>> parent of 1c75658... add firebase hosting:reactjs/munchkin/build/service-worker.js
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +37,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("./index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/reactjs/munchkin/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
