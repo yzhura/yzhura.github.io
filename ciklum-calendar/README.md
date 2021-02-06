@@ -3,7 +3,8 @@
 Ciclum calendar for Ciklum JavaScript Internship
 
 ## Usage
-Go to [pip](https://yzhura.github.io/ciklum-calendar/dist/calendar.html) and:
+Go to [My version of Ciclum calendar](https://yzhura.github.io/ciklum-calendar/dist/calendar.html) and:
+
 Create/delete meetings, change day/time using drag and drop technique, use filter to hide or show events. 
 Optional features:
 You will always see how many days left to weekends and how many meetings will be on this week
