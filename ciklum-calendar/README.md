@@ -1,9 +1,9 @@
-# Ciclum calendar
+# Ciklum calendar
 
-Ciclum calendar for Ciklum JavaScript Internship
+Ciklum calendar for Ciklum JavaScript Internship
 
 ## Usage
-Go to [My version of Ciclum calendar](https://yzhura.github.io/ciklum-calendar/dist/calendar.html) and:
+Go to [My version of Ciklum calendar](https://yzhura.github.io/ciklum-calendar/dist/calendar.html) and:
 
 Create/delete meetings, change day/time using drag and drop technique, use filter to hide or show events. 
 Optional features:
@@ -11,7 +11,7 @@ You will always see how many days left to weekends and how many meetings will be
 
 ## Installation
 
-After download use the command to install node_nodules:
+After download use the command to install node_modules:
 ```bash
 npm i
 ``` 
