@@ -23,6 +23,9 @@ npm run start
 
 Working folder is "src"
 
+In folder src --> js you can find normal JavaScript
+
+In folder "dist" compiled babel js
 
 Use command to build prodaction version
 ```bash
