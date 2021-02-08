@@ -21,6 +21,8 @@ And then use command to run the project
 npm run start
 ``` 
 
+Open html files from folder "dist"
+
 Working folder is "src"
 
 In folder src --> js you can find normal JavaScript
